@@ -3,5 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00E91E63</color>
-    <color name="orange">#3a4946</color>
+    <color name="orange">#FF5722</color>
+    <color name="kinda_dark_green">#3e4e4b</color>
+    <color name="kinda_blue">#8cbab7</color>
+    <color name="gray">#717171</color>
 </resources>
