@@ -3,4 +3,13 @@
     <string name="main_nickname">Nickname</string>
     <string name="main_let_s_get_started">Let\'s get started</string>
     <string name="main_welcome">Welcome!</string>
+    <string name="quiz_number">#1</string>
+    <string name="fragment_category">Category:</string>
+    <string name="fragment_category_food">Food</string>
+    <string name="fragment_submit">Submit</string>
+    <string name="quiz_question_number">Question #1</string>
+    <string name="quiz_submit">Submit</string>
+    <string name="quiz_type_answer">Guess the logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
