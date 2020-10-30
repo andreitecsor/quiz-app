@@ -22,7 +22,7 @@ import ie.dam.hw1.quiz_app.model.Player;
  */
 public class Quiz2Fragment extends Fragment {
     private static String PLAYER_KEY = "000_player";
-    private static final String ANSWER = "SLACK";
+    private final String ANSWER = getString(R.string.answer_q2);
     private static final Integer QUESTION_NUMBER = 2;
 
     private TextInputEditText answer;

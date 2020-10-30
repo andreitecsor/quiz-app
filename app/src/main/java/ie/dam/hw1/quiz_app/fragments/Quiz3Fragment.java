@@ -22,7 +22,7 @@ import ie.dam.hw1.quiz_app.model.Player;
  */
 public class Quiz3Fragment extends Fragment {
     private static String PLAYER_KEY = "000_player";
-    private static final String ANSWER = "ANDROID STUDIO";
+    private final String ANSWER = getString(R.string.answer_q3);
     private static final Integer QUESTION_NUMBER = 3;
 
     private TextInputEditText answer;

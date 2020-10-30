@@ -16,7 +16,7 @@ import ie.dam.hw1.quiz_app.R;
 
 public class Quiz1Fragment extends Fragment {
     private static String PLAYER_KEY = "000_player";
-    private static final String ANSWER = "GITHUB";
+    private final String ANSWER = getString(R.string.answer_q1);
     private static final Integer QUESTION_NUMBER = 1;
 
     private TextInputEditText answer;
