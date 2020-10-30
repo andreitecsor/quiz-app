@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
 
-    <style name="AndreisTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AndreiTecsorsTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -9,7 +9,4 @@
         <item name="fontFamily">@font/baloo_bhai</item>
     </style>
 
-    <style name="HintStyle" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/gray</item>
-    </style>
 </resources>

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/transparent"
-    android:theme="@style/AndreisTheme"
+    android:theme="@style/AndreiTecsorsTheme"
     tools:context=".fragments.Quiz3Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/tecsor_andrei_fragment_q3_cl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/quiz_category_box">
+        android:background="@drawable/quiz_box">
 
         <ImageView
             android:id="@+id/tecsor_andrei_fragment_q3_logo"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/button_model2"
-            android:text="@string/quiz_submit"
+            android:text="@string/quiz_finish"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/AndreisTheme"
+    android:theme="@style/AndreiTecsorsTheme"
     android:background="@color/transparent"
     tools:context=".fragments.Quiz1Fragment">
 
@@ -12,7 +12,7 @@
         android:id="@+id/tecsor_andrei_fragment_q1_cl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/quiz_category_box"
+        android:background="@drawable/quiz_box"
         >
 
         <ImageView

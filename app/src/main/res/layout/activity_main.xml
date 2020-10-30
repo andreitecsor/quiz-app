@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/AndreisTheme"
+    style="@style/AndreiTecsorsTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
@@ -10,14 +10,14 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/tecsor_andrei_login_cl"
+        android:id="@+id/tecsor_andrei_result_cl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/main_login_box"
+        android:background="@drawable/main_box"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/main_welcome"
-            android:textSize="30dp"
             android:textColor="@color/gray"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -41,8 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Are you ready to guess some brands?"
-            android:textSize="12dp"
             android:textColor="@color/gray"
+            android:textSize="12dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tecsor_andrei_login_welcome" />
@@ -61,15 +61,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
 
-            app:layout_constraintTop_toBottomOf="@+id/tecsor_andrei_login_brief"
-            >
+            app:layout_constraintTop_toBottomOf="@+id/tecsor_andrei_login_brief">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tecsor_andrei_login_tiet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/kinda_orange"
-                android:hint="@string/main_nickname" />
+                android:hint="@string/main_nickname"
+                android:textColor="@color/kinda_orange" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
