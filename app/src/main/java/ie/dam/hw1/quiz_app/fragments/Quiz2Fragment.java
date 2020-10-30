@@ -7,8 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.google.android.material.textfield.TextInputEditText;
+
+import ie.dam.hw1.quiz_app.QuizActivity;
 import ie.dam.hw1.quiz_app.R;
+import ie.dam.hw1.quiz_app.model.Player;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,51 +21,49 @@ import ie.dam.hw1.quiz_app.R;
  * create an instance of this fragment.
  */
 public class Quiz2Fragment extends Fragment {
+    private static String PLAYER_KEY = "000_player";
+    private static final String ANSWER = "SLACK";
+    private static final Integer QUESTION_NUMBER = 2;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private TextInputEditText answer;
+    private Button submitButton;
 
     public Quiz2Fragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Quiz2Fragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Quiz2Fragment newInstance(String param1, String param2) {
+    public static Quiz2Fragment newInstance() {
         Quiz2Fragment fragment = new Quiz2Fragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quiz2, container, false);
+        View view = inflater.inflate(R.layout.fragment_quiz2, container, false);
+        initialiseComponents(view);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String playerAnswer = answer.getText().toString().toUpperCase().trim();
+                boolean correctAnswer = false;
+                if (playerAnswer.equals(ANSWER)) {
+                    correctAnswer = true;
+                }
+                QuizActivity quizActivity = (QuizActivity) getActivity();
+                quizActivity.getPlayerAnswer(QUESTION_NUMBER, correctAnswer);
+            }
+        });
+        return view;
     }
+
+
+    private void initialiseComponents(View view) {
+        answer = view.findViewById(R.id.tecsor_andrei_fragment_q2_tiet);
+        submitButton = view.findViewById(R.id.tecsor_andrei_fragment_q2_btn);
+    }
+
+
 }

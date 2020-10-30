@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Are you ready to guess some brands?"
+            android:text="@string/are_you_ready_to_guess_some_logos"
             android:textColor="@color/gray"
             android:textSize="12dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/main_nickname"
-                android:textColor="@color/kinda_orange" />
+                android:textColor="@color/kinda_dark_green" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -76,7 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/button_model1"
+            android:background="@drawable/main_button_model"
             android:fontFamily="@font/baloo_bhai"
             android:text="@string/main_let_s_get_started"
             android:textColor="@color/white"

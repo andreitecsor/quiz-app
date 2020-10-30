@@ -30,10 +30,15 @@
     <ProgressBar
         android:id="@+id/tecsor_andrei_quiz_pg"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleY="2.5"
+        app:layout_constraintEnd_toEndOf="@+id/tecsor_andrei_quiz_frame"
+        app:layout_constraintStart_toStartOf="@+id/tecsor_andrei_quiz_frame"
         app:layout_constraintTop_toBottomOf="@+id/tecsor_andrei_quiz_tv" />
 
     <TextView

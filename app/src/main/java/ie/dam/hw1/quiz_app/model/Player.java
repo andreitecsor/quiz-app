@@ -14,6 +14,9 @@ public class Player implements Serializable {
     public Player(String nickname) {
         this.nickname = nickname;
         this.answers = new HashMap();
+        this.answers.put(1,null);
+        this.answers.put(2,null);
+        this.answers.put(3,null);
     }
 
     public String getNickname() {
@@ -22,6 +25,10 @@ public class Player implements Serializable {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    public Map<Integer, Boolean> getAnswers() {
+        return answers;
     }
 
     @Override

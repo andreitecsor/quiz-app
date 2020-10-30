@@ -6,15 +6,17 @@
     <string name="fragment_category">Category:</string>
     <string name="fragment_category_food">Food</string>
     <string name="fragment_submit">Submit</string>
-    <string name="quiz_question_number">Question #1</string>
+    <string name="quiz_question_number">Question #</string>
     <string name="quiz_submit">Submit</string>
     <string name="quiz_type_answer">Guess the logo</string>
     <string name="quiz_finish">Finish</string>
-    <string name="result_thanks_user">Thanks for playing, user!</string>
+    <string name="result_thanks_user">Thanks for playing,\n user</string>
     <string name="result_score">0/3</string>
     <string name="result_try_again">Try again?</string>
     <string name="result_play_again">Play again</string>
     <string name="result_new_player">New player?</string>
-    <string name="easter_egg">Made with love and hardwork by Andrei Tecsor</string>
+    <string name="easter_egg">Made by AT</string>
+    <string name="invalid_nickname">Please enter a valid nickname</string>
+    <string name="are_you_ready_to_guess_some_logos">Are you ready to guess some logos?</string>
 
 </resources>

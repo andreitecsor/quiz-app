@@ -14,4 +14,7 @@
     <color name="gray">#717171</color>
     <color name="kinda_pink">#ffac9e</color>
     <color name="kinda_yellow">#f6b968</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="yellow">#FFEB3B</color>
 </resources>
