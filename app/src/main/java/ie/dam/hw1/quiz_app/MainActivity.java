@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), QuizActivity.class);
                     intent.putExtra(PLAYER_KEY, newPlayer);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

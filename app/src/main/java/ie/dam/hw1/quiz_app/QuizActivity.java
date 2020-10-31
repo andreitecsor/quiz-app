@@ -55,6 +55,7 @@ public class QuizActivity extends AppCompatActivity {
             Intent intentResult = new Intent(getApplicationContext(), ResultActivity.class);
             intentResult.putExtra(PLAYER_KEY, player);
             startActivity(intentResult);
+            finish();
         }
     }
 

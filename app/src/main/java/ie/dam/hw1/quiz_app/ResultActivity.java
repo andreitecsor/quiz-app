@@ -40,6 +40,7 @@ public class ResultActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent newGame = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(newGame);
+                finish();
             }
         };
     }
@@ -54,6 +55,7 @@ public class ResultActivity extends AppCompatActivity {
                 }
                 newGame.putExtra(PLAYER_KEY, player);
                 startActivity(newGame);
+                finish();
             }
         };
     }
